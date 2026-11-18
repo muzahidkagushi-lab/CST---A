@@ -3,14 +3,15 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "npx cap sync android"
+    "build": "npx cap sync android",
+    "build:css": "tailwindcss -i ./src/tailwind.css -o ./www/assets/tailwind.css --minify"
   },
   "dependencies": {
-    "@capacitor/core": "^6.1.2",
-    "@capacitor/android": "^6.1.2"
+    "@capacitor/android": "^6.1.2",
+    "@capacitor/core": "^6.1.2"
   },
   "devDependencies": {
-    "@capacitor/cli": "^6.1.2",
-    "@capacitor/assets": "3.0.5"
+    "@capacitor/assets": "3.0.5",
+    "@capacitor/cli": "^6.1.2"
   }
 }
